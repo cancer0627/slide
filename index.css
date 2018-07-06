@@ -1,0 +1,103 @@
+.slide{
+    font-size: .4rem;
+    width: 5rem;
+    height: .2rem;
+    padding: 1rem 0;
+    margin: auto;
+    position: relative;
+}
+.inp_box{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.inp_box input{
+    display: block;
+    width: 60%;
+    padding: .1rem;
+    box-sizing: border-box;
+    margin: auto;
+}
+.slide_box{
+    font-size: .3rem;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+.slide_bar_bg{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.slide_bar_bg .val_min,
+.slide_bar_bg .val_max{
+    font-size: .2rem;
+    text-align: center;
+    width: 1rem;
+    position: absolute;
+    top: -.4rem;
+}
+.slide_bar_bg .val_min{left: -.5rem;}
+.slide_bar_bg .val_max{right: -.5rem;}
+.slide_bar{
+    width: 0%;
+    height: 100%;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    margin-top: -.2rem;
+    float: left;
+    position: relative;
+    background: rgb(205, 235, 124);
+}
+.slide_bar .btn_drag{
+    width: .4rem;
+    height: .4rem;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    position: absolute;
+    top: -.1rem;
+    right: -.2rem;
+    background: #000;
+}
+.slide_bar .btn_drag.disable{
+    background: #ccc;
+}
+.slide_bar .val_cur{
+    text-align: center;
+    width: 1rem;
+    position: absolute;
+    top: .3rem;
+    right: -.5rem;
+}
+.btn_box{
+    width: 100%;
+    position: absolute;
+    top: .8rem;
+    left: 0;
+}
+.btn_box .btn_dec,
+.btn_box .btn_inc{
+    color: #000;
+    text-align: center;
+    line-height: .6rem;
+    width: .6rem;
+    height: .6rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    background: rgb(205, 235, 124);
+}
+.btn_box .disable{
+    background: #ccc;
+}
+.btn_box .btn_dec{
+    left: -1rem;
+}
+.btn_box .btn_inc{
+    right: -1rem;
+}
